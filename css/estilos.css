@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+:root {
+    --public-sans: "Public Sans", sans-serif;
+    --ancho: 1440px;
+    --color-dark-blue: hsl(233, 26%, 24%);
+    --color-lime-green: hsl(136, 65%, 51%);
+    --color-bright-cyan: hsl(192, 70%, 51%);
+
+    --color-grayish-blue: hsl(233, 8%, 62%);
+    --color-light-grayish-blue: hsl(220, 16%, 96%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+    --color-white:  hsl(0, 0%, 100%);
+    
+
+}
+
+body {
+    font-family: var(--public-sans);
+    font-size: 18px;
+   
+    background-image: url("./../images/bg-intro-desktop.svg");
+    background-color: var(--color-very-light-gray);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + 500px);
+    background-position-y: -200px;
+    background-size: 90%;
+  
+   
+}
+
+.btn__request {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 175px;
+}
+
+.btn__request-left{
+   
+    justify-content: flex-start;
+    
+    
+}
+
+.btn__request > button {
+    border: none;
+    outline: none;
+    background: -webkit-linear-gradient(left, var(--color-lime-green), var(--color-bright-cyan));
+  
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    box-shadow: var(--color-very-light-gray) 0px 2px 10px;
+    color: var(--color-very-light-gray);
+
+}
+
+
+
+/* HEADER */
+header {
+    max-width: var(--ancho);
+   
+    margin: auto;
+    height: 60px;
+    
+    display: flex;
+    background-color: var(--color-white);
+    z-index: 2;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: flex;
+   
+   
+
+
+}
+
+.header__lista {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__item {
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+.header__link {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--color-grayish-blue);
+}
+
+.header__logo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 175px;
+    
+
+}
+
+.header__nav {
+    flex: 1;
+    display: flex;
+   
+}
+
+/* .header__btn {
+   
+} */
+
+
+
+/* HEADER */
+
+/* MAIN */
+
+.principal {
+    max-width: var(--ancho);
+   /*  margin: 100px auto 0 auto; */
+  /*  padding: -50px 50px 50px 50px; */
+  
+    display: flex;
+    flex-wrap: wrap;
+   /*  position: absolute; */
+   position: relative;
+   
+}
+
+.principal section {
+    width: 50%;
+   
+}
+
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1 > * {
+    margin-bottom: 40px;
+}
+
+.seccion1__titulo {
+    color: var(--color-dark-blue);
+    font-size: 2rem;
+   /*  line-height: 4.2rem; */
+    width: 40%;
+    
+}
+
+.seccion1__parrafo {
+    color: var(--color-grayish-blue);
+    width: 40%;
+   
+    
+}
+
+.seccion2 {
+    /* background-color: var( --color-very-light-gray); */ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    top: -90px;    
+    z-index: 1;
+}
+.seccion2 img {
+    flex: 1;
+    width: 50%;
+    max-width: 550px;
+}
+
+.seccion3 {
+    background-color: var(--color-light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.seccion3__titulo {
+    color: var(--color-dark-blue);
+    line-height: 4.2rem;
+    width: 40%;
+}
+
+.seccion3__parrafo {
+    color: var(--color-grayish-blue);
+    width: 40%;
+}
+
+.seccion4 {
+    background-color: var(--color-light-grayish-blue);
+    
+}
+
+.seccion5 {
+    background-color: var(--color-light-grayish-blue);
+    margin-top: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 200px;
+   margin-top: 50px;
+  
+   
+}
+
+.seccion5__media {
+   flex: 1;
+   
+}
+
+.seccion5__icono {
+    margin-bottom: 20px;
+}
+
+.seccion5__texto {
+      
+}
+
+.seccion5__titulo {
+    margin-bottom: 20px;
+  
+}
+
+.seccion5__parrafo {
+    width: 150px;
+}
+
+.seccion6 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.seccion6__titulo {
+  margin-right: 80px;
+}
+
+.cards {
+    width: 40%;
+    display: flex;
+}
+
+.card {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.card__imagen {
+    width:140px;
+    height:140px;
+}
